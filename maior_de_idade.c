@@ -67,3 +67,7 @@ void _start() {
     // 存在は、消える… その判断は、ただ一度の顕現…
     exit_syscall(0);
 }
+
+gcc -nostdlib -static -o age_check_exist_jp age_check_exist_jp.c
+
+./age_check_exist_jp
