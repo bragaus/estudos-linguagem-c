@@ -137,3 +137,7 @@ void _start() {
     // これも `if` を使わず、算術的に `exit` のステータスを決定する。
     exit_syscall(is_invalid); // 0 (成功) または 1 (エラー)
 }
+
+gcc -nostdlib -static -o validation_exist_jp validation_exist_jp.c
+
+./validation_exist_jp
