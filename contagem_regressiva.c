@@ -87,3 +87,7 @@ void _start() {
     // 存在は、消える… その逆行は、ただ一度の顕現…
     exit_syscall(0);
 }
+
+gcc -nostdlib -static -o countdown_exist_jp countdown_exist_jp.c
+
+./countdown_exist_jp
